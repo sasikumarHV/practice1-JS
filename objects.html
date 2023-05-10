@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Objects</title>
+    <script type = "text/javascript">
+
+        //creation using object literals
+
+        let car = {car_brand:"Bmw",car_colour:"black",car_model:"X1"} //creation of objects in javascript
+        document.write(car["car_brand"]+"<br>");  //accessing the values in object
+        document.write(car.car_colour);          //accessing the values in object
+        car["price"]="20000$";  //adding the properties of car 
+        //car.price ="20000$"; another way of adding the properties for objects
+        document.write("<br>"+car.price);  
+        document.write(car);
+
+        let car2 = Object.create(user); //creates the object in the same format as user user object and also we can update the value in each properties
+        Object.keys(car);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
