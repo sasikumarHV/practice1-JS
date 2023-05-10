@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Objects</title>
+    <script type = "text/javascript">
+
+        //creation of objects using new keyword with constructor function
+
+        function user(name, age, place)
+        {
+            this.name = name;
+            this.age = age;
+            this.place= place;
+        }
+        var user1 = new user("sasi",20,"Bangalore");
+        var user2 = new user("rohith",21,"Hyderabad");
+        document.write(user1.age+"<br>"+user2.place+"<br>");
+        document.write(user2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
