@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom2</title>
+    <script type="text/javascript">
+        function login()
+        {
+            username=document.getElementById("text1").value;
+            password=document.getElementById("pass").value;
+            if(username==password)
+            {
+                alert("Username and password was matched");
+            }
+            else
+            {
+                alert("logged in successfully");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <label>Username</label>
+    <input type="text" placeholder="Username/email" id="text1"><br><br>
+    <label>Password</label>
+    <input type="password" placeholder="password" id="pass"><br><br>
+    <button type="submit" onclick="login()">Submit</button>
+    
+</body>
+</html>
