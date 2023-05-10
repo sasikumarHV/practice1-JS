@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM radio button</title>
+    <script type="text/javascript">
+        function fun1()
+        {
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            if(rd1.checked==true)
+            {
+                alert(rd1.value+" is selected");
+            }
+            else if(rd2.checked==true)
+            {
+                alert(rd2.value+" is selected");
+            }
+            else{
+                alert("No college is selected");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Select In Which college do want purse B.Tech</h2>
+    <input type="radio" id="rd1" name="grp1" value="GITAM University">GITAM University</input><br><br>
+    <input type="radio" id="rd2" name="grp1" value="Reva University">Reva university</input><br><br>
+    <button onclick="fun1()" id="bt1">Click me</button>
+    
+</body>
+</html>
