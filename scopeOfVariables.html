@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Scope</title>
+    <script type="text/javascript">
+        var x=10; //global variable(It can be accessed from anywhere)
+        document.write(x +"<br>");
+        
+        function myFunction()
+        {
+            var y =19; //local variable (it cannnot be accesed from outside the function)
+            document.write(y+"<br>");
+            document.write(x +"<br>"); //global variable
+        }
+        myFunction();
+        document.write("<br>"+y); //local variable
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
