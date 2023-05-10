@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Arrays</title>
+    <!--Javascript can store multiple datatypes value-->
+    <script type="text/javascript">
+        var cars=["BMW","Volvo","Audi"]; //array syntax
+        var nums = new Array(10,20,30,40,50) //another way creation of an array
+        document.write(cars.length); //provides the size of an array
+        
+        cars[3]="ferrari"; //assigns the value in array at the respective position
+        cars.push(1);  //pushes the value at the end of an array
+        document.write("<br>"+cars[2]); //accessing the value using index position
+
+        cars.unshift("kia"); //adds the value at the beginning position
+
+
+        for(var i=0;i<cars.length;i++)
+        {
+            document.write("<p>"+cars[i]+"<p>"); //returns the values of an array
+
+        }
+        document.write(cars[6]); //out of index value 
+        document.write("<br>"+cars.pop()); //removes the last value in the array
+        document.write("<br>"+cars.shift()); //removes the first element 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
